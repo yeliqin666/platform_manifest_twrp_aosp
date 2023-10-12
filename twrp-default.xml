@@ -4,6 +4,10 @@
             fetch="https://github.com/TeamWin"
             review="https://gerrit.twrp.me"/>
 
+    <remote name="skkk"
+            fetch="https://github.com/sekaiacg"
+            review="https://gerrit.twrp.me"/>
+    
     <remote name="LineageOS"
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org"/>
@@ -38,7 +42,7 @@
     <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
 
     <!-- TWRP lives in TeamWin repo -->
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-12.1"/>
+    <project path="bootable/recovery" name="twrp_recovery" remote="skkk" revision="android-12.1"/>
 
     <!-- Use TeamWin repos for full recovery compatibility -->
     <project path="build/make" name="android_build" remote="TeamWin" revision="android-12.1" groups="pdk">
